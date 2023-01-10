@@ -15,6 +15,10 @@ class Base_contact():
 
     @property
     def label_length(self):
+        if "pan " in self.name:
+            return(len(self.name) -4)
+        if "pani " in self.name:
+            return(len(self.name) -5)
         return len(self.name)
 
 class Business_contact(Base_contact):

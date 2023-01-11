@@ -31,7 +31,6 @@ class Business_contact(Base_contact):
     def _contact(self):
         return f'Wybieram numer {self.business_phone} i dzwonię do {self.name}'
 
-x = 0
 def create_contacts(business_card_type, quantity):
     business_card = []
     fake = Faker('pl_PL')
